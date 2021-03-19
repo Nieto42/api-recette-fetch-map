@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "josefin Sans", sans-serif;
+}
+
+a, a:visited {
+    color: #333;
+}
+
+body {
+    background: #F1EFE5;
+    padding: 2rem;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body h1 {
+    font-size: 4.5rem;
+    margin: 1rem 0 2rem;
+    font-weight: 100;
+    color: #333;
+}
+
+body .searchInput, body .randomMeal {
+    height: 2rem;
+    width: 300px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+body .searchInput {
+    transition: 0.2s ease;
+}
+
+body .searchInput:focus {
+    background: #333;
+    color: white;
+    font-weight: 400;
+}
+
+body .randomMeal {
+
+    margin: 0 0 2rem 1rem;
+    background: #E6E3D6;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+body .results {
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body .noresult {
+    font-size: 4rem;
+}
+
+body .searchContainer {
+    flex: 1 0 18%;
+    background: #E6E3D6;
+    margin: 0.5rem;
+    padding: 1rem 0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+body searchContainer a{
+    display: inline-block;
+}
+
+body .searchContainer a i{
+    font-size: 1.4rem;
+}
+
+body .randomContainer {
+    clip-path: polygon(50% 0%, 100% 2%, 100% 98%, 50% 100%, 0 98%, 0 2%);
+    background: rgba(128, 128, 128, 0.4);
+    margin-bottom: 1.5rem;
+}
+body .randomContainer h2 {
+    padding: 1.5rem 0 0.5rem;
+    font-size: 2.7rem;
+    color: #252525;
+    text-shadow: 4px 2px 0 rgba(51, 51, 51, 0.252);
+  }
+  body .randomContainer .infos {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  body .randomContainer img {
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #333;
+  }
+  body .randomContainer p {
+    padding: 2rem;
+    font-weight: 700;
+  }
+  body .randomContainer a {
+    display: inline-block;
+    font-size: 4rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    animation: move 6s linear infinite;
+    color: #424242;
+  }
+  @keyframes move {
+    0% {
+      transform: scale(1);
+    }
+    38% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
